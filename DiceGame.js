@@ -5,22 +5,20 @@ const scoreElement = document.getElementById("score");
 const player1Element = document.getElementById("player1");
 const yourScoreText = document.getElementById("yourscoreText");
 const descriptionText = document.getElementById("description");
-// console.log(ImageWin);
-// const ImageWin = document.querySelector("#winText");
-// if ()
 
 
-// const toggleWinImage 
+
+button.addEventListener("click", () =>  {
+    if (dicePic.style.display === "none") {
+      dicePic.style.display = "flex";
+      dicePic.style.justifyContent = "center";
 
 
-// button.addEventListener("click", () => {
-//     if(dicePic.style.display == "none"){
-//         dicePic.style.diplay = "block";
-//     } else{
-//         dicePic.style.display = "none";
-        
-//     }
-// }
+    } else {
+      dicePic.style.display = "flex";
+
+    }
+  })
 
 
 const playAgainButton = () => {
@@ -53,9 +51,6 @@ let IfWinGame = () => {
     player1Element.style.fontSize = "6rem";
     yourScoreText.textContent = ("FINAL SCORE:");
     playAgainButton()
-  
-
-
     } else {
         button.addEventListener("click", rollDice);
     
@@ -73,14 +68,6 @@ const gameOver = () => {
     // resetScore(totalScore = 0);
 
     } 
-
-// const gameWin = () => {
-//     player1Element.textContent = "";
-//     player1Element.style.fontSize = "7rem";
-//     yourScoreText.textContent = ("FINAL SCORE:");
-//     playAgainOption();
-//     } 
-
 
 
 
